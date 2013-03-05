@@ -1,11 +1,10 @@
 // ==UserScript==
-// @name          sort.fm
-// @author        chocolateboy
-// @copyright     chocolateboy
-// @namespace     https://github.com/chocolateboy/userscripts
-// @version       1.0.1
+// @name          Total Scrobbles
+// @author        Vegard Øye
+// @namespace     https://github.com/epsil/totalscrobbles
+// @version       1.0.0
 // @license       GPL: http://www.gnu.org/copyleft/gpl.html
-// @description   Sort last.fm tracklists by track number, duration or number of listeners
+// @description   Add total scrobbles to Last.fm charts
 // @include       http://*.last.fm/music/*
 // @include       http://last.fm/music/*
 // @include       http://*.lastfm.*/music/*
@@ -17,6 +16,14 @@
 // ==/UserScript==
 
 /*
+ * This script scrapes the total playcount of each track into
+ * Last.fm's Tracks chart. It is a fork of the sort.fm script
+ * by chocolateboy:
+ *
+ *     https://github.com/chocolateboy/userscripts
+ *
+ * All code used with permission.
+ *
  * @requires:
  *
  * jQuery 1.9.1
